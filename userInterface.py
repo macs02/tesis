@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
-import altair as alt
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
 
@@ -61,8 +60,8 @@ def preprocess_data(input_df):
 
 # 🚀 UX: Guiado en sidebar
 with st.sidebar:
-    input_method = st.radio("Seleccionar modo de entrada:",
-                           ["📝 Manual", "📂 Archivo"])
+    input_method = st.radio("*Seleccionar modo de entrada:*",
+                           ["Entrada Manual", "Subir Archivo"])
 
 input_data = None
 
