@@ -60,7 +60,7 @@ def preprocess_data(input_df):
 
 # 🚀 UX: Guiado en sidebar
 with st.sidebar:
-    input_method = st.radio("*Seleccionar modo de entrada:*",
+    input_method = st.radio("**Seleccionar modo de entrada:**",
                            ["Entrada Manual", "Subir Archivo"])
 
 input_data = None
